@@ -1,0 +1,24 @@
+{
+  "name": "madalina-aghe.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --ext .js .html .cs --ignore-path .gitignore ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madalina-aghe/madalina-aghe.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/madalina-aghe/madalina-aghe.github.io/issues"
+  },
+  "homepage": "https://github.com/madalina-aghe/madalina-aghe.github.io#readme",
+  "dependencies": {
+    "eslint": "^7.24.0",
+    "lint": "^0.7.0"
+  }
+}

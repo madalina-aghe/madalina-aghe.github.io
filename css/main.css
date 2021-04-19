@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../assets/bckMada.jpg");
+  background-size: cover;
+  image-rendering: optimizeQuality;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: open sans light;
+}
+
+@media screen and (max-width: 1149px) {
+  body {
+    background-image: url("../assets/bck.jpg");
+  }
+}
+
+.nav {
+  position: relative;
+  max-width: 100%;
+  padding: 10px;
+  margin: 20px 30px;
+  box-sizing: border-box;
+}
+
+.logo {
+  color: #d85b6d;
+  height: 60px;
+  font-size: 36px;
+  line-height: 60px;
+  padding: 0px 20px;
+  text-align: center;
+  box-sizing: border-box;
+  float: left;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.menu {
+  float: right;
+}
+
+.fix {
+  clear: both;
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu ul li {
+  list-style: none;
+}
+
+.menu ul li a {
+  display: block;
+  margin: 10px 0px;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  color: white;
+}
+
+@media screen and (max-width: 1096px) {
+  .menu ul li a {
+    color: #00d3c4;
+  }
+}
+
+.content {
+  position: relative;
+  max-width: 100%;
+  margin: 90px 30px 30px;;
+}
+
+h1 {
+  font-weight: bold;
+  margin: 0;
+  font-size: 2em;
+}
+
+p {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin: 30px 0px 40px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 469px;
+  color: #551a8b;
+}
+
+input[type=button] {
+  color: #551a8b;
+  border: 2px solid;
+  border-radius: 20px;
+  background-color: transparent;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  outline: none;
+  transition: transform 80ms ease-in;
+}
+
+input[type=button]:active {
+  transform: scale(0.95);
+}
+
+input[type=button]:hover {
+  cursor: pointer;
+}
+
+.social {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.social ul li {
+  list-style: none;
+}
+
+.social ul li a {
+  text-decoration: none;
+}
+
+.social i {
+  padding: 13px 20px;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 523px) {
+  .menu {
+    bottom: 18%;
+    position: fixed;
+    color: #d85d6e;
+  }
+  .menu ul li a {
+    color: #d85d6e;
+  }
+
+  .social ul li {
+    display: inline;
+  }
+}
+
+.fa-facebook-f:hover,
+.fa-twitter:hover,
+.fa-instagram:hover {
+  font-size: 18px;
+}
+
