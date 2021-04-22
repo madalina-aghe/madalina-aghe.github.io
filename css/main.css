@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
 body {
   margin: 0;
   padding: 0;
@@ -6,7 +8,7 @@ body {
   image-rendering: optimizeQuality;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  font-family: open sans light;
+  font-family: 'Poppins', sans-serif;
 }
 
 @media screen and (max-width: 1149px) {
@@ -25,6 +27,9 @@ body {
 
 .logo {
   color: #d85b6d;
+  background: -webkit-linear-gradient(right, #d85b6d, #56d8e4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   height: 60px;
   font-size: 36px;
   line-height: 60px;
@@ -34,6 +39,7 @@ body {
   float: left;
   font-weight: 700;
   text-decoration: none;
+  transition: all 0.4s;
 }
 
 .menu {
@@ -99,28 +105,6 @@ p {
   color: #551a8b;
 }
 
-input[type=button] {
-  color: #551a8b;
-  border: 2px solid;
-  border-radius: 20px;
-  background-color: transparent;
-  font-size: 12px;
-  font-weight: bold;
-  padding: 12px 45px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  outline: none;
-  transition: transform 80ms ease-in;
-}
-
-input[type=button]:active {
-  transform: scale(0.95);
-}
-
-input[type=button]:hover {
-  cursor: pointer;
-}
-
 .social {
   position: absolute;
   bottom: 20px;
@@ -161,3 +145,99 @@ input[type=button]:hover {
   font-size: 18px;
 }
 
+.gradient-text {
+  /* Fallback: Set a background color. */
+  background-color: transparent;
+  
+  /* Create the gradient. */
+  background-image: linear-gradient(
+    45deg,
+    #551a8b 50%,
+    #fff 50%
+  );
+  
+  /* Set the background size and repeat properties. */
+  background-size: 270%;
+  background-repeat: repeat;
+  background-position: top right;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+
+  
+  animation: button-animation 0.65s 0.15s ease-out forwards;
+}
+
+.special-btn:hover, .special-btn:hover span{
+    animation: button-animation-rev 0.65s ease-out forwards;
+}
+
+.special-btn:hover {
+  box-shadow: 3px 2px 10px 1px rgba(0,0,0,0.15);
+  transition: 0.5s;
+}
+
+@keyframes button-animation {
+  0% {
+    background-position: top right;
+  }
+  100% {
+    background-position: top left;
+  }
+}
+
+@keyframes button-animation-rev {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+
+/* Style the rest of the page. */
+.special-btn {
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(45deg, #fff 50%, #551a8b 50%);
+  background-size: 270%;
+  background-repeat: repeat;
+  background-position: top right;
+  animation: button-animation 0.65s 0.15s ease-out forwards;
+  display: table;
+  border-radius: 0.5em;
+  text-decoration: none;
+  box-shadow: 7px 4px 20px 1px rgba(0,0,0,0.15);
+  padding: 1.5em 0;
+  cursor: pointer;
+
+  border: 2px solid;
+  border-radius: 40px;
+  outline: none;
+  transition: transform 80ms ease-in;
+}
+
+.special-btn:active {
+  transform: scale(0.95);
+}
+
+.special-btn span {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: normal;
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 0;
+  margin-bottom: -0.25em;
+  width: 100%;
+  padding: 0 1.5em;
+
+  /* font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px; */
+  text-transform: uppercase;
+}
