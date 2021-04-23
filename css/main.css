@@ -30,7 +30,6 @@ body {
   background: -webkit-linear-gradient(right, #d85b6d, #56d8e4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  height: 60px;
   font-size: 36px;
   line-height: 60px;
   padding: 0px 20px;
@@ -126,8 +125,9 @@ p {
 
 @media screen and (max-width: 523px) {
   .menu {
-    bottom: 18%;
-    position: fixed;
+    /* bottom: 18%; */
+    /* position: fixed; */
+    flex: center;
     color: #d85d6e;
   }
   .menu ul li a {
@@ -136,6 +136,11 @@ p {
 
   .social ul li {
     display: inline;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
   }
 }
 
