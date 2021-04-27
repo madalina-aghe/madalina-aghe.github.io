@@ -1,12 +1,19 @@
 body {
     background-image: url("../assets/bck.jpg");
-    margin: 0;
-    border: 0;
-    padding: 0;
     font-size: 16px;
-    overflow-x: hidden;
+}
+
+.nav {
     position: relative;
-    vertical-align: baseline;
+    max-width: 100%;
+    padding: 10px;
+    margin: 20px 30px;
+    box-sizing: border-box;
+    display: inherit;
+  }
+
+.menu {
+    float: right;
 }
 
 .about, .skills,
@@ -21,21 +28,12 @@ body {
     margin-top: 30px;
 }
 
-header {
-    text-align: center;
-    min-height: 400px;
-    overflow: hidden;
-    position: relative;
-    padding-top: 160px;
-    padding-bottom: 140px;
-}
-
 .about {
     background: white;
 }
 
 .skills {
-    background: #3366cc;
+    background: #551a8b;
     color: #f5f5f5;
 }
 
@@ -45,7 +43,7 @@ header {
 }
 
 .skills .progress .progress-bar-primary {
-    background: #204090;
+    background: #18002e;
 }
 
 .skills strong {
@@ -55,7 +53,7 @@ header {
 }
 
 .education {
-    background: #3366cc;
+    background: #551a8b;
     color: #f5f5f5;
 }
 
@@ -70,4 +68,51 @@ header {
 .education span {
     margin-right: 10px;
     padding-left: 20px;
+}
+
+.languages {
+    background: white;
+}
+
+.languages ul {
+    padding: 10px;
+    margin-top: 27px;
+}
+
+.languages ul li {
+    padding-bottom: 6px;
+}
+
+.contact {
+    background: white;
+    word-break: break-word;
+}
+
+.experience {
+    background: #551a8b;
+    color: #f5f5f5;
+}
+
+.experience-content {
+    padding-bottom: 14px;
+}
+
+.experience  h5 {
+    display: inline-block;
+}
+
+.experience span {
+    padding-right: 10px;
+    padding-left: 20px;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.social-icons li {
+    list-style: none;
+    padding: 10px;
+    color: #551a8b;
 }
